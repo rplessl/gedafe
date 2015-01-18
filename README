@@ -1,7 +1,7 @@
 
 
         ============================================
-        Gedafe (the Generic Database Frontend) 1.4.0
+        Gedafe (the Generic Database Frontend) 1.4.1
         ============================================
 
 
@@ -75,10 +75,10 @@ Copyright
 ---------
 
     Copyright (c) 2000-2007 ETH Zurich, All rights reserved.
-
+    Copyright (c) 2007-2014 OETIKER+PARTNER AG, All rights reserved.
 
 Authors
 -------
 
     David Schweikert, Tobias Oetiker, Adi Fairbank, Johannes
-    Poehlmann, and Freek Zindel
+    Poehlmann, Freek Zindel, Fritz Zaucker, Roman Plessl

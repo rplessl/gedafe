@@ -1,0 +1,19 @@
+# /etc/systemd/user/gedafed.service
+[Unit]
+Description=Gedafe Deamon used in Webapplication
+Documentation=https://gitlab.com/prunux/gedafe/
+After=network.target
+StartLimitBurst=5
+StartLimitIntervalSec=33
+
+[Service]
+Type=simple
+ExecStartPre=/bin/rm /tmp/.gedafed.sock
+ExecStart=/home/gedafe/bin/gedafed
+ExecStop=/bin/kill -STOP $MAINPID
+PIDFile=/run/gedafed.pid
+Restart=always
+User=gedafe
+
+[Install]
+WantedBy=multi-user.target

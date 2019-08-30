@@ -1,4 +1,4 @@
-#!/usr/bin/perl5.18.2 -w
+#!/usr/bin/perl -w
 
 use strict;
 use IO::Socket;
@@ -196,3 +196,25 @@ while(defined (my $conn = $socket->accept)) {
 	print "\n" if $DEBUG;
 	$conn->close;
 }
+
+exit 0;
+
+__END__
+
+=head1 NAME
+
+gedafed - Gedafe Daemon
+
+=head1 SYNOPSIS
+
+gedafed [-dDEBUG]
+
+=head1 DESCRIPTION
+
+=head1 EXAMPLE
+
+=head1 AUTHOR
+
+David Schweikert <dws@ee.ethz.ch>
+Freek Zindel
+Fritz Zaucker

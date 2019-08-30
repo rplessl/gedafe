@@ -1,0 +1,13 @@
+# /etc/systemd/user/gedafed.service
+[Unit]
+Description=Gedafe Deamon used in Webapplication
+Documentation=https://gitlab.com/prunux/gedafe/
+
+[Service]
+Type=forking
+ExecStart=/home/gedafe/bin/gedafed --daemonize yes --pidfile %h/.%p.pid
+PIDFile=%h/.%p.pid
+# Restart=always
+
+[Install]
+WantedBy=default.target

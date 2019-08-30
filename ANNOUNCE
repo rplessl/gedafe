@@ -1,9 +1,9 @@
 David Schweikert, Tobias Oetiker, Adi Fairbank, Johannes Poehlmann,
-and Freek Zindel are proud to announce:
+Freek Zindel and Roman Plessl are proud to announce:
 
 
             ============================================
-            Gedafe (the Generic Database Frontend) 1.4.0
+            Gedafe (the Generic Database Frontend) 1.4.2
             ============================================
 
 
@@ -40,7 +40,9 @@ Introduction
 Release Notes
 -------------
 
-  * Support for PostgreSQL >= 8.1
+  * Support for PostgreSQL >= 8.1 
+
+  * Support for Amazon Aurora Serverless (PostgreSQL Edition) 
 
   * Dropped support for PostgreSQL <= 7.2
 
@@ -101,5 +103,5 @@ Availability
     Gedafe is released under the GNU General Public License.
     Read more about it and download at
 
-    >> http://isg.ee.ethz.ch/tools/gedafe <<
+    >> https://github.com/gedafe/gedafe <<
 

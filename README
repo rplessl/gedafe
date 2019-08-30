@@ -1,7 +1,7 @@
 
 
         ============================================
-        Gedafe (the Generic Database Frontend) 1.4.1
+        Gedafe (the Generic Database Frontend) 1.4.2
         ============================================
 
 
@@ -41,34 +41,24 @@ Versioning Scheme
 Homepage
 --------
 
-    http://isg.ee.ethz.ch/tools/gedafe/
-
-
-Mailing List
-------------
-   
-   Subscribe: send an e-mail to gedafe-request@list.ee.ethz.ch with
-              subject "subscribe".
-
-   Archives:  http://lists.ee.ethz.ch/gedafe/
+    https://gitlab.com/prunux/gedafe
 
 
 License
 -------
 
-    This program is free software; you can redistribute it and/or
-    modify it under the terms of the GNU General Public License as
-    published by the Free Software Foundation; either version 2 of the
-    License, or (at your option) any later version.
-    
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
     This program is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-    General Public License for more details.
-    
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
     You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+    along with this program. If not, see <http://www.gnu.org/licenses/>.
 
 
 Copyright
@@ -76,6 +66,8 @@ Copyright
 
     Copyright (c) 2000-2007 ETH Zurich, All rights reserved.
     Copyright (c) 2007-2014 OETIKER+PARTNER AG, All rights reserved.
+    Copyright (c) 2016-2019 Plessl + Burkhardt GmbH, All rights reserved.
+    Copyright (c) 2019      prunux.ch, All rights reserved.
 
 Authors
 -------

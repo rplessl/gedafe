@@ -24,7 +24,7 @@ use Gedafe::GUI qw(
 	GUI_Export
 	GUI_DumpTable
 	GUI_DumpJSIsearch
-        GUI_Pearl
+    GUI_Pearl
 	GUI_Oyster
 );
 use Gedafe::DB qw(
@@ -35,9 +35,9 @@ use Gedafe::DB qw(
 );
 
 use Gedafe::Util qw(
-        Die
-        MakeURL
-        MyURL
+    Die
+    MakeURL
+    MyURL
 	InitTemplate
 	Template
 	NextRefresh
@@ -48,7 +48,7 @@ use Gedafe::Util qw(
 
 sub Start($%)
 {
-        my $q = shift;
+    my $q = shift;
 	my %conf = @_;
 
 	my $user = '';
@@ -67,20 +67,20 @@ sub Start($%)
 
 	# init global state if 'reload' in the url
 	if(defined $q->url_param('reload')) {
-                %g = ();
+        %g = ();
 	}
 
 	# configuration
 	if(not exists $g{conf}) {
 		# defaults
 		$g{conf} = {
-    		        list_rows        => 10,
-		        tickets_socket   => '/tmp/.gedafed.sock',
-		        gedafe_compat    => '1.2',
-		        utf8             => 0,
-		        allow_javascript => 0,
+    		list_rows        => 10,
+		    tickets_socket   => '/tmp/.gedafed.sock',
+		    gedafe_compat    => '1.2',
+		    utf8             => 0,
+		    allow_javascript => 0,
 		};
-
+		
 		# init config
 		while(my ($k, $v) = each %conf) {
 			$g{conf}{$k}=$v;
@@ -95,7 +95,7 @@ sub Start($%)
 	}
 	
 	# schema
-        $s{schema} = $q->url_param('schema') || $g{conf}{schema};
+    $s{schema} = $q->url_param('schema') || $g{conf}{schema};
 	
 	$s{url} = MyURL($q);
 	$q->url(-absolute=>1) =~ /(.*)\/([^\/]*)/;

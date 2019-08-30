@@ -4,6 +4,16 @@
 
 (arrows indicate actions that you should make when upgrading)
 
+1.4.2 (2019-08-30)
+------------------------------------------------------------------------------
+  * Adapt gedafe system to run also in 2019.
+
+  * change running and starting of gedafed to systemd
+ 
+  * updated thirdparty perl modules installer 
+
+  * Changed to GPL 3
+
 1.4.1 (2015-01-18)
 ------------------------------------------------------------------------------
   * Public release of oposs changes:

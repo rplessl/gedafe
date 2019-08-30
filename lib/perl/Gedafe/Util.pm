@@ -95,10 +95,10 @@ sub ConnectToTicketsDaemon($) {
 	my $s = shift;
 	my $file = $g{conf}{tickets_socket};
 	my $socket;
-        $socket = IO::Socket::UNIX->new(Peer => $file) or do {
-	    system '( /home/gedafe/gedafe-svn/bin/gedafed &)';
-            sleep 1;
-            $socket = IO::Socket::UNIX->new(Peer => $file) or die "Failed to create gedafed instance: $!";
+    $socket = IO::Socket::UNIX->new(Peer => $file) or do {
+		system '( /home/gedafe/bin/gedafed &)';
+    	sleep 1;
+        $socket = IO::Socket::UNIX->new(Peer => $file) or die "Failed to create gedafed instance: $!";
 	};
 	return $socket;
 }

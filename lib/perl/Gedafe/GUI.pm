@@ -466,7 +466,7 @@ sub GUI_Entry($$$)
 	} else {
 	    $tablelistref =  \@{$g{db_tables_list}}; 
 	}
-	$tablelistref    =  \@{$g{db_tables_list}} unless 
+	$tablelistref     =  \@{$g{db_tables_list}} unless 
 		scalar @{$tablelistref}  > 0;
 
 	$template_args{ELEMENT}='entrytable';
@@ -548,8 +548,8 @@ sub GUI_Entry($$$)
 		$template_args{ELEMENT}='pearls_list_header';
 		print Template(\%template_args);
 
-               $template_args{ELEMENT}='entrytable_start';
-               print Template(\%template_args);
+        $template_args{ELEMENT}='entrytable_start';
+        print Template(\%template_args);
 
 		$template_args{ELEMENT}='entrytable';
 		foreach my $t (sort { (ref $g{pearls}{$a} and ref $g{pearls}{$b} ) ?
@@ -558,18 +558,18 @@ sub GUI_Entry($$$)
 			if (ref $g{pearls}{$t}) {
 				@template_args{qw(TABLE_DESC TABLE_INFO)}=($g{pearls}{$t}->info);
 				$template_args{TABLE_URL}= MakeURL($s->{url}, {
-					action => scalar @{$g{pearls}{$t}->template()} ? 'configpearl' : 'runpearl',
-					pearl=> $t,
-					table  => undef,
+					action  => scalar @{$g{pearls}{$t}->template()} ? 'configpearl' : 'runpearl',
+					pearl   => $t,
+					table   => undef,
 					refresh => $refresh,
 				});
 			} else {
 				$template_args{REPORT}=1;
 				@template_args{qw(TABLE_DESC TABLE_INFO)}=($t,$g{pearls}{$t});
 				$template_args{TABLE_URL}= MakeURL($s->{url}, {
-					action => 'entry',
-					pearl=> $t,
-					table  => undef,
+					action  => 'entry',
+					pearl   => $t,
+					table   => undef,
 					refresh => $refresh,
 				});
 				$template_args{REPORT}=1;
@@ -577,8 +577,8 @@ sub GUI_Entry($$$)
 			print Template(\%template_args);
 		}
 
-               $template_args{ELEMENT}='entrytable_end';
-               print Template(\%template_args);
+        $template_args{ELEMENT}='entrytable_end';
+        print Template(\%template_args);
 
 	}
 

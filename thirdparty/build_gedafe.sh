@@ -7,4 +7,4 @@ export PATH=$PREFIX/bin:$PATH
 perlmodule CGI
 perlmodule CGI::Fast
 perlmodule FCGI
- 
+perlmodule YAML::XS 

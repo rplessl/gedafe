@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<HTML><HEAD><TITLE>
+#ifdef DATABASE_DESC
+##DATABASE_DESC##
+#else
+Gedafe
+#endif
+</TITLE>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</HEAD>
+<BODY  text="#000000" link="#0000FF" 
+#if ##USER## = admin
+
+bgcolor="#ffee00"
+#else
+
+bgcolor="#ffffff" 
+
+#endif
+ vlink="#0000FF" alink="#FF0000">
+
+#if ##TABLE## = absence_graph_rep
+
+<div id="navtxt" style="position:absolute; top:-100px; left:0px; visibility:hidden;"></div>
+<script language="javascript" src="alttxt.js"></script>
+
+#endif
+
+<TABLE WIDTH="100%" CELLPADDING=2 BORDER=0 CELLSPACING=0 >
+<TR>
+#ifdef DATABASE_DESC
+  <TD WITH="100%"><FONT SIZE=4><B>##DATABASE_DESC##</B></FONT></TD>
+#endif
+#ifdef USER
+  <TD>User: <B>##USER##</B></TD>
+#endif
+
+<TD ALIGN="RIGHT"><TABLE BGCOLOR="#a0a0a0" BORDER="0" CELLPADDING="0" CELLSPACING="0"><TR><TD>
+<TABLE BORDER="0" CELLPADDING="5" CELLSPACING="1"><TR>
+#ifdef ENTRY_URL
+  <TD BGCOLOR="#ffffff"><A href="##ENTRY_URL##">Entry</A></TD>
+#endif
+
+#ifdef REFRESH_URL
+  <TD BGCOLOR="#ffffff"><A href="##REFRESH_URL##">Refresh</A></TD>
+#endif
+
+#ifdef PRINT_TOGGLE_URL
+#ifdef PRINT_TOGGLE_FLAG
+#if ##PRINT_TOGGLE_FLAG## = 1
+  <TD BGCOLOR="#ffffff"><A href="##PRINT_TOGGLE_URL##">Screen format</A></TD>
+#else
+  <TD BGCOLOR="#ffffff"><A href="##PRINT_TOGGLE_URL##">Print format</A></TD>
+#endif
+#endif
+#endif
+
+#ifdef LOGOUT_URL
+  <TD BGCOLOR="#ffffff"><A href="##LOGOUT_URL##">Logout</A></TD>
+#endif
+
+#ifdef DOCUMENTATION_URL
+  <TD BGCOLOR="#ffffff"><A href="##DOCUMENTATION_URL##">Docs</A></TD>
+#endif
+
+#ifdef BOOKMARK_URL
+  <TD BGCOLOR="#ffffff"><A href="##BOOKMARK_URL##"><IMG SRC="images/bookmark.gif" ALT="Bookmark" BORDER=0></A></TD>
+#endif
+
+  </TR></TABLE></TD></TR></TABLE></TD>
+
+</TR></TABLE>
